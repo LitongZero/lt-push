@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  redis:
+    host: localhost
+    port: 6479
+    password:
+
+push:
+  server:
+    host: localhost
+    port: 8082
