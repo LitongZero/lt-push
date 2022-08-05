@@ -35,7 +35,7 @@ public class RedisSub implements MessageListener {
         if (!StringUtils.isEmpty(channel) && !StringUtils.isEmpty(pushMsgEntity)) {
             // 向客户端推送消息
             HashMap<UUID, SocketIOClient> userClient = clientCache.getUserClient(pushMsgEntity.getUid());
-            if (userClient != null & !userClient.isEmpty()) {
+            if (userClient != null && !userClient.isEmpty()) {
                 userClient.forEach((uuid, socketIOClient) -> {
                     socketIOClient.sendEvent("chatevent", pushMsgEntity.getMessage());
                 });
