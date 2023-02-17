@@ -1,3 +1,4 @@
+# 小程序可以使用以下方法
 App({
     globalData: {
         socketStatus: 'closed',
