@@ -601,6 +601,3 @@ Content-Type: application/json
 ## 五.源码下载
 [GitHub地址](https://github.com/LitongZero/lt-push)
 觉得不错可以给我点个star/赞。
-
-###### 小小赞助，谢谢！
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190913113709828.png)
