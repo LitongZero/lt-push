@@ -8,6 +8,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -35,6 +36,7 @@ public class MessagePushConfig implements InitializingBean {
     }
 
     @Bean
+    @Lazy
     public SocketIOServer socketIOServer() {
         Configuration config = new Configuration();
         config.setPort(serverPort);
